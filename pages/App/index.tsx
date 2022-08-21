@@ -1,7 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-// import styles from '../styles/Home.module.css';
-// import Mainmenu from '../../src/components/MainMenu';
 import Popup from 'reactjs-popup';
 import Mainmenu from '@/src/components/MainMenu';
 import { BiSearchAlt, BiWrench } from 'react-icons/bi';
@@ -11,7 +9,6 @@ import { RiDeleteBin5Line } from 'react-icons/ri';
 import { TbBuildingCommunity, TbBuildingWarehouse } from 'react-icons/tb';
 import { useEffect, useState } from 'react';
 import useBreakpoint from '@/src/shared-hooks/use-breakpoint';
-import { loginUser } from '@/src/request/api';
 import { signOut } from 'next-auth/react';
 import { useRouter } from 'next/router';
 
