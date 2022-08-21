@@ -6,7 +6,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { useRouter } from 'next/router';
 import { signIn } from 'next-auth/react';
 
-const login = () => {
+const Login = () => {
   const [open, setOpen] = useState(false);
   const [data, setData] = useState<any>();
   const [email, setEmail] = useState('');
@@ -148,4 +148,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
