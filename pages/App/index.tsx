@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 // import styles from '../styles/Home.module.css';
 // import Mainmenu from '../../src/components/MainMenu';
 import Popup from 'reactjs-popup';
@@ -11,9 +10,6 @@ import { BsTelephone, BsGlobe, BsBell } from 'react-icons/bs';
 import { RiDeleteBin5Line } from 'react-icons/ri';
 import { TbBuildingCommunity, TbBuildingWarehouse } from 'react-icons/tb';
 import { useEffect, useState } from 'react';
-import profile from '~/public/assets/images/profile.jpg';
-import building from '~/public/assets/images/building.jpg';
-import mitra from '~/public/assets/images/mitra.jpeg';
 import useBreakpoint from '@/src/shared-hooks/use-breakpoint';
 import { loginUser } from '@/src/request/api';
 import { signOut } from 'next-auth/react';
