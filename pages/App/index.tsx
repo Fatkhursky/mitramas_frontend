@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import useBreakpoint from '@/src/shared-hooks/use-breakpoint';
 import { signOut } from 'next-auth/react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   const breakpoint = useBreakpoint();
@@ -71,7 +72,7 @@ const Home: NextPage = () => {
                   <Popup
                     trigger={
                       <div className="flex gap-3 cursor-pointer">
-                        <img
+                        <Image
                           className="w-8 rounded-full"
                           src={'/assets/images/profile.jpg'}
                           alt=""
@@ -105,12 +106,12 @@ const Home: NextPage = () => {
             <div className="body grid  grid-flow-col gap-7 ">
               <div className="section1 shadow-lg flex flex-col gap-12 row-span-3 col-span-1 bg-white ...">
                 <div className=" flex flex-col items-center relative bg-red-400">
-                  <img
+                  <Image
                     className="object-covee h-32 w-full "
                     src={'/assets/images/building.jpg'}
                     alt=""
                   />
-                  <img
+                  <Image
                     className="rounded-full h-24 w-24 drop-shadow-lg absolute top-1/2"
                     src={'/assets/images/mitra.jpeg'}
                     alt=""
