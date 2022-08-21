@@ -1,4 +1,4 @@
-.container {
+/* .container {
   padding: 0 2rem;
 }
 
@@ -126,4 +126,35 @@
   .logo img {
     filter: invert(1);
   }
+} */
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 25%;
+  padding: 5px;
+  border-radius: 10px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.50) -1px 1px 10px 2px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+/* togle */
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #ffffff;
+}
+input:checked ~ .body {
+  background-color: #2e8b68;
 }
