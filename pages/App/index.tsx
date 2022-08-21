@@ -187,7 +187,7 @@ const Home: NextPage = () => {
                         className="text-green-700 underline cursor-pointer"
                         href="https://www.mitrasolusi.group/"
                         target="_blank"
-                        rel="noreferer"
+                        rel="noopener noreferrer"
                       >
                         mitramas.com
                       </a>
