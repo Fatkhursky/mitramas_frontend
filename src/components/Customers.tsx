@@ -34,7 +34,7 @@ const Customers = () => {
     setCustomers(customers.filter((e) => e.name.toLowerCase().includes(search.toLowerCase())))
   }
   if (!search)  getData()
-  }, [search]);
+  }, [search, customers]);
 
 
   // Sort by status
@@ -593,7 +593,7 @@ const Customers = () => {
                       onClick={handleDelete}
                       className="p-2 bg-red-500 rounded-md text-white"
                     >
-                      Yes, I'm sure
+                      Yes, Im sure
                     </button>
                     <button
                       onClick={() => setIsOpen(false)}
