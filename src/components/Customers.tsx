@@ -132,7 +132,6 @@ const Customers = () => {
     overlay: { background: 'rgba(112, 110, 110, 0.65)' },
     content: {
       borderRadius: '15px',
-      width: '30%',
       top: '50%',
       left: '50%',
       right: 'auto',
@@ -620,7 +619,7 @@ const Customers = () => {
                 style={editModalStyle}
                 contentLabel="Modal Edit"
               >
-                <form onSubmit={handleUpdate} className="flex flex-col gap-5">
+                <form onSubmit={handleUpdate} className="flex flex-col gap-2">
                   <div>
                     <svg
                       onClick={closeModal}
@@ -638,7 +637,7 @@ const Customers = () => {
                     </svg>
                     <p>Edit Form</p>
                   </div>
-                  <div className="flex flex-col gap-7">
+                  <div className="flex flex-col gap-2">
                     <div className="relative">
                       <input
                         type="text"

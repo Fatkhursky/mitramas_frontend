@@ -62,7 +62,7 @@ const Home: NextPage = () => {
               <div className="flex gap-5 items-center">
                 <p className="text-slate-400">Perusahaan</p>
                 <p className="text-slate-400">{'>'}</p>
-                <p className="font-bold">Mitaramas Infosys Global</p>
+                <p className="font-bold xs:text-xs sm:text-xl">Mitaramas Infosys Global</p>
               </div>
               <div className="flex items-center gap-12">
                 <div className="flex gap-3">
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
                           className="w-12 rounded-full"
                           alt=""
                         />
-                        <p>Mrs John Doe</p>
+                        <p className='xs:text-xs sm:text-xl'>Mrs John Doe</p>
                       </div>
                     }
                     {...{}}
