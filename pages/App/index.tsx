@@ -12,7 +12,6 @@ import useBreakpoint from '@/src/shared-hooks/use-breakpoint';
 import { signOut } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import Cards from 'react-credit-cards';
 
 const Home: NextPage = () => {
   const breakpoint = useBreakpoint();
