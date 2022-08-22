@@ -56,7 +56,7 @@ const Home: NextPage = () => {
             <Mainmenu />
           </div>
           <div className=" maincontent w-screen">
-            <div className="header flex justify-between items-center p-5">
+            <div className="header flex justify-between bg-white shadow-md sticky top-0 z-30 items-center p-5">
               <div className="flex gap-5 items-center">
                 <p className="text-slate-400">Perusahaan</p>
                 <p className="text-slate-400">{'>'}</p>
