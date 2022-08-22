@@ -51,8 +51,8 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="App mx-auto max-w-screen-2xl">
-        <div className="wrapper bg-[#f0fdf4] flex gap-7  h-fit">
-          <div className='w-fit sticky -top-3/4'>
+        <div className="wrapper bg-[#f0fdf4] flex gap-7 ">
+          <div>
             <Mainmenu />
           </div>
           <div className=" maincontent w-screen">
