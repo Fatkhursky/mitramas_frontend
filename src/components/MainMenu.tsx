@@ -24,17 +24,6 @@ const menuArr = [
   { name : 'dummy', comp : <RiAppsLine />},
   { name : 'dummy', comp : <FaSearchDollar />},
   { name : 'dummy', comp : <IoDocumentTextOutline />},
-    // <BiHomeCircle />, 
-    // <TbTicket />,
-    // <MdOutlineTask />,
-    // <IoPrintOutline />,
-    // <BsBuilding />,
-    // <BiGroup />,
-    // <IoIosApps />,
-    // <GrCube />,
-    // <RiAppsLine />,
-    // <FaSearchDollar />,
-    // <IoDocumentTextOutline />,
 ]
 
 
@@ -45,7 +34,7 @@ const Mainmenu = () => {
     router.push('/')
   }
   return (
-    <div className="flex flex-col bg-white shadow-lg h-full text-3xl text-slate-600 cursor-pointer">
+    <div className="flex flex-col bg-white shadow-lg h-full text-3xl text-slate-700 cursor-pointer">
     {menuArr.map((e, i) => (
          <div key={i} onClick={ () =>  router.push(e.name)} className={clsx('border-l-4 border-transparent p-4', router.pathname === e.name ? 'bg-[#f0fdf4] border-l-4 border-[#059669]' : null)}>
         {e.comp}

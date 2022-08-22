@@ -51,11 +51,11 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="App mx-auto max-w-screen-2xl">
-        <div className="wrapper bg-[#f0fdf4] flex gap-7 h-fit">
-          <div>
+        <div className="wrapper bg-[#f0fdf4] flex gap-7  h-fit">
+          <div className='w-fit sticky -top-3/4'>
             <Mainmenu />
           </div>
-          <div className="maincontent w-screen">
+          <div className=" maincontent w-screen">
             <div className="header flex justify-between items-center p-5">
               <div className="flex gap-5 items-center">
                 <p className="text-slate-400">Perusahaan</p>
@@ -224,7 +224,7 @@ const Home: NextPage = () => {
                 <div className="flex flex-col gap-5">
                   <div className="flex justify-between items-center">
                     <strong>Akun Bank</strong>
-                    <div className="flex bg-green-700 rounded-md px-5 md:py-1 lg:py-1 sm:items-center text-center text-white gap-2 font-bold cursor-pointer">
+                    <div className="flex bg-green-700 rounded-md px-5 p-2 sm:items-center text-center text-white gap-2 font-bold cursor-pointer">
                       <p>+</p>
                       <p>Tambah Akun Bank</p>
                     </div>
@@ -258,7 +258,7 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                   <div className="flex gap-5">
-                  <div className="credit-card pointer-events-none select-none">
+                    <div className="credit-card pointer-events-none select-none">
                       <div className="relative h-16 w-24 flex-col rounded-xl bg-gradient-to-r from-yellow-500 to-green-400  px-2 text-white shadow-xl">
                         <div className=" top-10 absolute left-14 h-3 w-8">
                           <svg viewBox="0 0 1000 324.68">
