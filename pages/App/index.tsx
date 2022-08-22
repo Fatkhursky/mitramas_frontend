@@ -71,12 +71,8 @@ const Home: NextPage = () => {
                 {didMount ? (
                   <Popup
                     trigger={
-                      <div className="flex gap-3 cursor-pointer">
-                        <Image
-                          className="w-8 rounded-full"
-                          src={'/assets/images/profile.jpg'}
-                          alt=""
-                        />
+                      <div className="gap-3 flex  items-center cursor-pointer">
+                        <img src="/assets/images/profile.jpg" className='w-12 rounded-full' alt="" />
                         <p>Mrs John Doe</p>
                       </div>
                     }
@@ -106,16 +102,8 @@ const Home: NextPage = () => {
             <div className="body grid  grid-flow-col gap-7 ">
               <div className="section1 shadow-lg flex flex-col gap-12 row-span-3 col-span-1 bg-white ...">
                 <div className=" flex flex-col items-center relative bg-red-400">
-                  <Image
-                    className="object-covee h-32 w-full "
-                    src={'/assets/images/building.jpg'}
-                    alt=""
-                  />
-                  <Image
-                    className="rounded-full h-24 w-24 drop-shadow-lg absolute top-1/2"
-                    src={'/assets/images/mitra.jpeg'}
-                    alt=""
-                  />
+                  <img src="/assets/images/building.jpg" alt="" />
+                  <img src="/assets/images/mitra.jpeg" className='absolute top-3/4 w-24 shadow-md rounded-full' alt="" />
                 </div>
                 <div className="flex flex-col gap-5 items-center">
                   <div className="flex flex-col items-center ">

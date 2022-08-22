@@ -34,7 +34,7 @@ const Customers = () => {
     setCustomers(customers.filter((e) => e.name.toLowerCase().includes(search.toLowerCase())))
   }
   if (!search)  getData()
-  }, [search, customers]);
+  }, [search]);
 
 
   // Sort by status
@@ -324,12 +324,12 @@ const Customers = () => {
                   type="text"
                   name="hs-table-search"
                   id="hs-table-search"
-                  className="block w-full p-3 pl-10 text-sm border-gray-200 rounded-md focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                  className="block w-full p-3 pl-10 text-sm outline-green-400 rounded-md focus:outline-blue-500"
                   placeholder="Search..."
                 />
                 <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
                   <svg
-                    className="h-3.5 w-3.5 text-gray-400"
+                    className="h-3.5 w-3.5 text-slate-900"
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
