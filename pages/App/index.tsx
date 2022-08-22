@@ -104,7 +104,7 @@ const Home: NextPage = () => {
             </div>
             {/* grid-rows-1 */}
             <div className="body grid  grid-flow-col gap-7 ">
-              <div className="section1 shadow-lg flex flex-col  sm:gap-16 lg:gap-20 xl:gap-24 row-span-3 col-span-1 bg-white ...">
+              <div className="section1 shadow-lg flex flex-col gap-16 sm:gap-16 lg:gap-20 xl:gap-24 row-span-3 col-span-1 bg-white ...">
                 <div className=" flex flex-col items-center relative bg-red-400">
                   <img src="/assets/images/building.jpg" alt="" />
                   <img
@@ -115,7 +115,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className="flex flex-col gap-5 items-center">
                   <div className="flex flex-col items-center ">
-                    <p className="font-bold text-xl ">
+                    <p className="font-bold lg:text-2xl ">
                       Mitramas Infosys global
                     </p>
                     <p className="text-slate-400">Layanan IT</p>
@@ -224,7 +224,7 @@ const Home: NextPage = () => {
                 <div className="flex flex-col gap-5">
                   <div className="flex justify-between items-center">
                     <strong>Akun Bank</strong>
-                    <div className="flex bg-green-700 rounded-md px-5 py-1 text-white gap-2 font-bold cursor-pointer">
+                    <div className="flex bg-green-700 rounded-md px-5 md:py-1 lg:py-1 sm:items-center text-center text-white gap-2 font-bold cursor-pointer">
                       <p>+</p>
                       <p>Tambah Akun Bank</p>
                     </div>
