@@ -12,6 +12,7 @@ import useBreakpoint from '@/src/shared-hooks/use-breakpoint';
 import { signOut } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import clsx from 'clsx';
 
 const Home: NextPage = () => {
   const breakpoint = useBreakpoint();
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     setDidMount(true);
+    console.log(22, breakpoint);
   }, [breakpoint]);
 
   function noFeature() {
@@ -51,7 +53,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="App mx-auto max-w-screen-2xl">
-        <div className="wrapper bg-[#f0fdf4] flex gap-7 ">
+        <div className={clsx("wrapper bg-[#f0fdf4] gap-7", breakpoint=== 'lg' || breakpoint=== 'xl' || breakpoint=== '2xl' ? 'flex' : null)}>
           <div>
             <Mainmenu />
           </div>

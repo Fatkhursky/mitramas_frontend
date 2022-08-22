@@ -11,6 +11,8 @@ import { RiAppsLine } from 'react-icons/ri';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
+import useBreakpoint from '@/src/shared-hooks/use-breakpoint';
+import { useEffect } from 'react';
 
 const menuArr = [
   { name : '/App', comp : <BiHomeCircle />},
@@ -28,13 +30,21 @@ const menuArr = [
 
 
 const Mainmenu = () => {
+  const breakpoint = useBreakpoint();
+
+  useEffect(() => {
+    //setDidMount(true);
+    console.log(11, breakpoint)
+  }, [breakpoint]);
+
+
   const router = useRouter()
   const [activeMenu, setActiveMenu] = useState('')
   function onHome () {
     router.push('/')
   }
   return (
-    <div className="flex flex-col bg-white shadow-lg h-screen  sticky top-0 text-3xl text-slate-700 cursor-pointer">
+    <div className={clsx(" bg-white shadow-lg  text-slate-700 cursor-pointer", breakpoint=== 'lg' || breakpoint=== 'xl' || breakpoint=== '2xl'  ? 'top-0 text-3xl flex flex-col h-screen sticky' : 'overflow-hidden text-2xl w-full justify-between fixed bottom-0 flex z-30')}>
     {menuArr.map((e, i) => (
          <div key={i} onClick={ () =>  router.push(e.name)} className={clsx('border-l-4 border-transparent p-4', router.pathname === e.name ? 'bg-[#f0fdf4] border-l-4 border-[#059669]' : null)}>
         {e.comp}
