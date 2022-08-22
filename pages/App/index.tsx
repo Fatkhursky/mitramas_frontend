@@ -104,7 +104,7 @@ const Home: NextPage = () => {
             </div>
             {/* grid-rows-1 */}
             <div className="body lg:grid  lg:grid-flow-col gap-7 ">
-              <div className="section1 shadow-lg flex flex-col xs:gap-24 sm:gap-32 md:gap-48 lg:gap-24 row-span-3 col-span-1 bg-white ...">
+              <div className="section1 shadow-lg flex flex-col xs:gap-24 sm:gap-20 md:gap-48 lg:gap-24 row-span-3 col-span-1 bg-white ...">
                 <div className=" flex flex-col items-center relative ">
                   <img src="/assets/images/building.jpg" alt="" />
                   <img
