@@ -104,12 +104,12 @@ const Home: NextPage = () => {
             </div>
             {/* grid-rows-1 */}
             <div className="body grid  grid-flow-col gap-7 ">
-              <div className="section1 shadow-lg flex flex-col gap-12 row-span-3 col-span-1 bg-white ...">
+              <div className="section1 shadow-lg flex flex-col  sm:gap-16 lg:gap-20 xl:gap-24 row-span-3 col-span-1 bg-white ...">
                 <div className=" flex flex-col items-center relative bg-red-400">
                   <img src="/assets/images/building.jpg" alt="" />
                   <img
                     src="/assets/images/mitra.jpeg"
-                    className="absolute top-3/4 w-24 shadow-md rounded-full"
+                    className="absolute top-3/4 w-1/3 shadow-md rounded-full"
                     alt=""
                   />
                 </div>
@@ -188,31 +188,31 @@ const Home: NextPage = () => {
               </div>
 
               <div className="section2 col-span-2 row-span-1  bg-white shadow-lg p-5 ...">
-                <div className="gap-7 flex flex-col my-auto h-full justify-center">
+                <div className="gap-5 flex flex-col my-auto h-full justify-center">
                   <div className="flex justify-between">
                     <strong>Lokasi</strong>
                     <p className="text-green-700 cursor-pointer">Lihat Semua</p>
                   </div>
-                  <div className="flex gap-3">
-                    <div className="bg-green-600 flex justify-between rounded-md  p-3 grow flex items-center text-white">
-                      <TbBuildingCommunity className="text-5xl" />
+                  <div className="flex gap-2">
+                    <div className="bg-green-600 flex justify-between rounded-md p-2 grow flex items-center text-white">
+                      <TbBuildingCommunity className="text-4xl  xl:text-5xl" />
                       <div>
-                        <p className="font-bold text-2xl">20</p>
+                        <p className="font-bold xl:text-2xl">20</p>
                         <p>Induk</p>
                       </div>
                     </div>
-                    <div className="bg-green-600 flex justify-between rounded-md p-3 grow flex items-center text-white">
-                      <BiWrench className="text-5xl" />
+                    <div className="bg-green-600 flex justify-between rounded-md p-2 grow flex items-center text-white">
+                      <BiWrench className="text-4xl xl:text-5xl" />
                       <div className="text-right">
-                        <p className="font-bold text-2xl">3</p>
+                        <p className="font-bold xl:text-2xl">3</p>
                         <p>Sub Lokasi Level 1</p>
                       </div>
                     </div>
-                    <div className="bg-green-600 flex justify-between rounded-md  grow p-3 flex items-center text-white">
-                      <TbBuildingWarehouse className="text-5xl" />
+                    <div className="bg-green-600 flex justify-between rounded-md  grow p-2 flex items-center text-white">
+                      <TbBuildingWarehouse className="text-4xl xl:text-5xl" />
 
                       <div className="text-right">
-                        <p className="font-bold text-2xl">1</p>
+                        <p className="font-bold xl:text-2xl">1</p>
                         <p>Sub Lokasi Level 1</p>
                       </div>
                     </div>
