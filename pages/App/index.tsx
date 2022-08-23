@@ -66,7 +66,7 @@ const Home: NextPage = () => {
               </div>
               <div className="flex items-center gap-12">
                 <div className="flex gap-3">
-                  <BiSearchAlt onClick={noFeature} className="cursor-pointer" />
+                  <BiSearchAlt onClick={noFeature} className={clsx(breakpoint=== 'lg' || breakpoint=== 'xl' || breakpoint=== '2xl' ? 'cursor-pointer' : 'cursor-default')} />
                   <BsBell onClick={noFeature} className="cursor-pointer" />
                 </div>
 
